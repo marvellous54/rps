@@ -1,0 +1,109 @@
+/* GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* SCORE SECTION */
+.scores {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.scores span {
+    position: relative;
+    top: 0.3em;
+}
+
+.scores span:nth-child(1) {
+    border-right: 0.1em solid black;
+    padding-right: 0.3em;
+    color: red;
+}
+
+.scores span:nth-child(2) {
+    color: lime;
+}
+
+/* ANSWER SECTION */
+.answer-div {
+    width: 100%;
+    /* background-color: wheat; */
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.answer-div > p {
+    border-radius: 0.5em;
+    width: 10em;
+    height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#botAnswer {
+    background-color: red;
+    margin: 0.1em;
+}
+
+#yourAnswer {
+    background-color: lime;
+    margin: 0.2em;
+}
+
+/* USER INPUT SECTION */
+.user-input {
+    width: 100%;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+#rock, #paper, #scissor {
+    width: 10em;
+    padding: 1em 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0.1em;
+    text-align: center;
+    border: 1px solid lime;
+    color: rgb(9, 11, 109);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px white;
+}
+
+#rock:hover, #paper:hover, #scissor:hover {
+    transform: scale(1.01);
+    /* background-image: url('img/btn2.png'); */
+    cursor: pointer;
+}
+
